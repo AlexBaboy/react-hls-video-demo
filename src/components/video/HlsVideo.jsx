@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import Hls from "hls.js";
 import styles from './HlsVideo.module.css'
 
@@ -6,10 +6,11 @@ const HlsVideo = ({ urlToLaunch }) => {
 
     const [hls, setHls] = useState(null)
     const [error, setError] = useState('')
+    const refVideo = useRef(null)
 
     useEffect(() => {
 
-        const video = document.getElementById('video');
+        const video = refVideo.current;
         if(Hls.isSupported()) {
 
             const hls = new Hls();
@@ -46,6 +47,7 @@ const HlsVideo = ({ urlToLaunch }) => {
                 className={styles.video}
                 id={'video'}
                 controls={true}
+                ref={refVideo}
             />
             <h2 className={styles.errorText}>{error}</h2>
         </div>
