@@ -2,7 +2,7 @@ import React, {useRef} from 'react';
 import {useKeyDownHandler} from "../hooks/useKeyDownHandler";
 import styles from './SearchVideo.module.css'
 
-const SearchVideo = ({changeUrl, startHandler}) => {
+const SearchVideo = ({changeUrlHandler, startHandler}) => {
 
     const inputRef = useRef(null);
     useKeyDownHandler(inputRef, startHandler)
@@ -12,7 +12,7 @@ const SearchVideo = ({changeUrl, startHandler}) => {
             <input
                 ref={inputRef}
                 className={styles.urlInput}
-                onChange={e => changeUrl(e.target.value)}
+                onChange={e => changeUrlHandler(e.target.value)}
                 type={'text'}
                 placeholder={'Enter your url'}
             />

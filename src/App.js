@@ -18,7 +18,7 @@ function App() {
             <header>HLS Demo</header>
             <div className={'demo-wrapper'}>
                 <SearchVideo
-                    changeUrl={setUrl}
+                    changeUrlHandler={setUrl}
                     startHandler={startHandler}
                 />
                 <HlsVideo
