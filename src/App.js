@@ -9,10 +9,6 @@ function App() {
     const [url, setUrl] = useState(defaultUrl)
     const [urlToLaunch, setUrlToLaunch] = useState(defaultUrl)
 
-    const changeUrlHandler = (url) => {
-        setUrl(url)
-    }
-
     const startHandler = () => {
         setUrlToLaunch(url);
     }
@@ -22,7 +18,7 @@ function App() {
             <header>HLS Demo</header>
             <div className={'demo-wrapper'}>
                 <SearchVideo
-                    changeUrl={changeUrlHandler}
+                    changeUrl={setUrl}
                     startHandler={startHandler}
                 />
                 <HlsVideo
