@@ -16,7 +16,7 @@ const HlsVideo = ({ urlToLaunch }) => {
             hls.loadSource(urlToLaunch);
             hls.attachMedia(video);
             hls.on(Hls.Events.MANIFEST_PARSED,function() {
-                video.play();
+                //video.play();
             });
             setError('')
             hls.on(Hls.Events.ERROR, function (event, data) {
