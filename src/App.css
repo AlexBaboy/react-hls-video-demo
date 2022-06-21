@@ -1,14 +1,6 @@
 .App {
   text-align: center;
 }
-.video-wrapper {
-  width: 30rem;
-  margin: 2rem auto;
-}
-
-#video {
-  width: 30rem;
-}
 
 .url-row {
   display: flex;
@@ -19,9 +11,4 @@
 
 .url-input {
   width: 25rem;
-}
-
-.errorText {
-  color: red;
-  font-weight: bold;
 }

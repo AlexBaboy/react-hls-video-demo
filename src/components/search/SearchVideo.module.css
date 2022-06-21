@@ -1,0 +1,10 @@
+.url-row {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    gap: 1rem;
+}
+
+.url-input {
+    width: 25rem;
+}

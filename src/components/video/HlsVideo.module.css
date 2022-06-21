@@ -1,0 +1,14 @@
+.video-wrapper {
+    width: 30rem;
+    margin: 2rem auto;
+}
+
+.video {
+    width: 30rem;
+}
+
+.errorText {
+    color: red;
+    font-weight: bold;
+}
+

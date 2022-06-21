@@ -1,6 +1,6 @@
 import './App.css';
-import HlsVideo from "./components/video/hlsVideo";
-import SearchVideo from "./components/searchVideo/searchVideo";
+import HlsVideo from "./components/video/HlsVideo";
+import SearchVideo from "./components/search/SearchVideo";
 import {useState} from "react";
 import {defaultUrl} from "./components/constants/default";
 

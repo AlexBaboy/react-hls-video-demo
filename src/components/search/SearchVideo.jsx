@@ -1,20 +1,19 @@
-import React from 'react';
+import React, {useRef} from 'react';
+import {useKeyDownHandler} from "../hooks/useKeyDownHandler";
+import styles from './SearchVideo.module.css'
 
 const SearchVideo = ({changeUrl, startHandler}) => {
 
-    const keyDownHandler = (e) => {
-        if (e.key === 'Enter') {
-            startHandler()
-        }
-    }
+    const inputRef = useRef(null);
+    useKeyDownHandler(inputRef, startHandler)
 
     return (
-        <div className={'url-row'}>
+        <div className={styles.urlRow}>
             <input
-                className={'url-input'}
+                ref={inputRef}
+                className={styles.urlInput}
                 onChange={e => changeUrl(e.target.value)}
                 type={'text'}
-                onKeyDown={e => keyDownHandler(e)}
             />
             <button
                 type={'button'}

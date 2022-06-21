@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import Hls from "hls.js";
+import styles from './HlsVideo.module.css'
 
 const HlsVideo = ({ urlToLaunch }) => {
 
@@ -7,7 +8,6 @@ const HlsVideo = ({ urlToLaunch }) => {
     const [error, setError] = useState('')
 
     useEffect(() => {
-
 
         const video = document.getElementById('video');
         if(Hls.isSupported()) {
@@ -41,13 +41,13 @@ const HlsVideo = ({ urlToLaunch }) => {
     }, [urlToLaunch])
 
     return (
-        <div className={'video-wrapper'}>
+        <div className={styles.videoWrapper}>
             <video
-                className={'video'}
+                className={styles.video}
                 id={'video'}
                 controls={true}
             />
-            <h2 className={'errorText'}>{error}</h2>
+            <h2 className={styles.errorText}>{error}</h2>
         </div>
     );
 };
