@@ -14,12 +14,13 @@ const SearchVideo = ({changeUrl, startHandler}) => {
                 className={styles.urlInput}
                 onChange={e => changeUrl(e.target.value)}
                 type={'text'}
+                placeholder={'Enter your url'}
             />
             <button
                 type={'button'}
                 onClick={startHandler}
                 className={styles.buttonSearch}
-            >Start</button>
+            >LAUNCH</button>
         </div>
     );
 };
