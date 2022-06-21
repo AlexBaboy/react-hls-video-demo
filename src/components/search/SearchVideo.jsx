@@ -18,6 +18,7 @@ const SearchVideo = ({changeUrl, startHandler}) => {
             <button
                 type={'button'}
                 onClick={startHandler}
+                className={styles.buttonSearch}
             >Start</button>
         </div>
     );

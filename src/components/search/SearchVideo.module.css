@@ -1,10 +1,17 @@
-.url-row {
+.urlRow {
     display: flex;
     justify-content: center;
     margin: 2rem;
     gap: 1rem;
 }
 
-.url-input {
-    width: 25rem;
+.urlInput {
+    width: 32rem;
+}
+
+.buttonSearch {
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 0.2rem;
+    width: 6rem;
 }
