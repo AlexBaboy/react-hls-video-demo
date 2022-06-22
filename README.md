@@ -1,3 +1,11 @@
+Требования:
+
+1)	Реализовать на чистом create react app проекте
+2)	Единственная посторонняя библиотека которая может использоваться - hls.js https://github.com/video-dev/hls.js/
+3)	Использовать только функциональные компоненты
+4)	Сделать хук который будет слушать “keydown” ивент, затем реализовать данный хук который при нажатии на enter должен делать тоже самое что при нажатии на “Запустить”
+5)  Результат залит на GitHub
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
