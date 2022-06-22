@@ -20,11 +20,7 @@ const HlsVideo = ({ urlToLaunch }) => {
                 setError('')
             });
             hls.on(Hls.Events.ERROR, function (event, data) {
-                switch (data.details) {
-                    default:
-                        setError(data.details)
-                        break;
-                }
+                setError(data.details)
                 hls.destroy()
             });
             setHls(hls)

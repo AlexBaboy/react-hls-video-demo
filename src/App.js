@@ -2,7 +2,7 @@ import './App.css';
 import HlsVideo from "./components/video/HlsVideo";
 import SearchVideo from "./components/search/SearchVideo";
 import {useState} from "react";
-import {defaultUrl} from "./components/constants/default";
+import {defaultUrl} from "./constants/default";
 
 function App() {
 

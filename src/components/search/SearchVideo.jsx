@@ -1,5 +1,5 @@
 import React, {useRef} from 'react';
-import {useKeyDownHandler} from "../hooks/useKeyDownHandler";
+import {useKeyDownHandler} from "../../hooks/useKeyDownHandler";
 import styles from './SearchVideo.module.css'
 
 const SearchVideo = ({changeUrlHandler, startHandler}) => {
